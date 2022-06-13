@@ -21,8 +21,7 @@ function sumOfDifferences(arr) {
     });
     let sortReverse = arr.reverse()
     for(let i = 0; i < sortReverse.length; i++){
-        // 0-1, 1-2, 2-3
-            let subNumber = sortReverse[i] - sortReverse[i + 1]
+        let subNumber = sortReverse[i] - sortReverse[i + 1]
         if(i !== (sortReverse.length - 1)){
             total += subNumber
         }
