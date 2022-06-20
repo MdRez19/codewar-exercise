@@ -29,12 +29,3 @@ function sumOfDifferences(arr) {
     return total;
 }
 console.log(sumOfDifferences([2, 1, 10]))
-
-// let numbers = [5, 2, 2, 25, 15, 12 ];
-// numbers.sort((a,b) => {
-//     if(a > b) return 1;
-//     if(a < b) return -1;
-//     return 0;
-// });
-//
-// console.log(numbers.reverse());
