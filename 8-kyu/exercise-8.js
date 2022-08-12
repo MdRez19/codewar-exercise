@@ -1,26 +1,20 @@
-// Count by X...
-
+// Are You Playing Banjo?...
 
 /*
+Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
 
-Create a function with two arguments that will return an array of the first (n) multiples of (x).
+The function takes a name as its only argument, and returns one of the following strings:
 
-Assume both the given number and the number of times to count will be positive numbers greater than 0.
-
-Return the results as an array (or list in Python, Haskell or Elixir).
-
-Examples:
-
-countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
-countBy(2,5) === [2,4,6,8,10]
+name + " plays banjo"
+name + " does not play banjo"
+Names given are always valid strings.
  */
 
-function countBy(x, n) {
-    let z = [];
-    for(let i = 1; i <= n; i++){
-       z.push(x*i);
-    }
-    return z;
+function areYouPlayingBanjo(name) {
+    // Implement me
+    if(name[0] === 'R' || name[0] === 'r') return `${name} plays banjo`
+    return `${name} does not play banjo`;
 }
 
-console.log(countBy(2, 5))
+console.log(areYouPlayingBanjo('shoyra'))
