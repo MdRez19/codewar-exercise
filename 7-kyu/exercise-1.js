@@ -8,3 +8,16 @@
 // 10, "blue", "red"  -->  ["blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red"]
 // 0, "one", "two"    -->  []
 
+function alternate(n, firstValue, secondValue){
+    // your code
+    const result = []
+    for(let i = 0; i < n; i++){
+        if(i % 2 === 0){
+            result.push(firstValue)
+        } else{
+            result.push(secondValue)
+        }
+    }
+    return result
+}
+console.log(alternate(10, 'red', 'blue'))
