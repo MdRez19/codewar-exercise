@@ -15,6 +15,7 @@ The function should combine all the 0th indexed letters to create the word 'just
 Examples:
 
 
+
     arrAdder([
         ['J','L','L','M'],
         ['u','i','i','a'],
