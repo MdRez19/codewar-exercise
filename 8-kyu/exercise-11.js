@@ -22,6 +22,7 @@ Happy coding!
 
  */
 
+
 function mergeArrays(arr1, arr2) {
     let mergeIntoOne = []
     let filterArr;
