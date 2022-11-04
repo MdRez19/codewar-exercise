@@ -33,27 +33,31 @@ Dog Years
 // 4 human years is 34 years of dog
 
 
-
-
-
+// let humanYearsCatYearsDogYears = function(humanYears) {
+//     let cat = 15
+//     let dog = 15
+//     // Your code here!
+//     let result = [0,0,0]
+//     if(humanYears === 1){
+//         result = [humanYears, cat, dog]
+//     } else if (humanYears === 2){
+//         cat = 15 + 9
+//         dog = 15 + 9
+//         result = [humanYears, cat, dog]
+//     } else if(humanYears > 2){
+//         let twoYearsAfter = humanYears - 2
+//         cat = 24 + (4 * twoYearsAfter)
+//         dog = 24 + (5 * twoYearsAfter)
+//         result = [humanYears, cat, dog]
+//     }
+//     return result;
+// }
+// console.log(humanYearsCatYearsDogYears(10))
 
 let humanYearsCatYearsDogYears = function(humanYears) {
-    let cat = 15
-    let dog = 15
-    // Your code here!
-    let result = [0,0,0]
-    if(humanYears === 1){
-        result = [humanYears, cat, dog]
-    } else if (humanYears === 2){
-        cat = 15 + 9
-        dog = 15 + 9
-        result = [humanYears, cat, dog]
-    } else if(humanYears > 2){
-        let twoYearsAfter = humanYears - 2
-        cat = 24 + (4 * twoYearsAfter)
-        dog = 24 + (5 * twoYearsAfter)
-        result = [humanYears, cat, dog]
+    if(humanYears >= 2){
+        return ([humanYears, 24 + ((humanYears - 2) * 4), 24 + ((humanYears - 2) * 5)])
     }
-    return result;
+    return ([humanYears, 15, 15]);
 }
 console.log(humanYearsCatYearsDogYears(10))
