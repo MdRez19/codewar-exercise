@@ -24,3 +24,27 @@ our team always plays 10 matches in the championship
 0 <= y <= 4
 
 */
+
+// x value
+// y value
+
+
+function points(games) {
+    let result = 0
+    for (let i = 0; i < games.length; i++){
+        let num = games[i].split(':')
+        let x = Number(num[0])
+        let y = Number(num[1])
+        if(x > y){
+            result += 3
+        } else if(x < y) {
+            result += 0
+        } else if(x === y) {
+            result += 1
+        }
+    }
+    return result
+}
+
+console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]))
+
