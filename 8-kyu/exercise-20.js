@@ -8,9 +8,8 @@ DESCRIPTION:
  */
 
 function typeOfSum(a, b) {
-    let result = a + b
     // good luck
-    return result
+    return a + b
 }
 
 console.log(typeof typeOfSum('s', false))
