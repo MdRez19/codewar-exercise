@@ -30,7 +30,6 @@ If you can, try writing it in only one line of code.
 
 
 function findMultiples(integer, limit) {
-    //your code here
     let result = []
     let i = 1;
     while (integer * i <= limit){
